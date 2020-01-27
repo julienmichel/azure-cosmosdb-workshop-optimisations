@@ -6,6 +6,20 @@ Attendees provision a new Cosmos DB account, using the SQL API, located in a res
 
 ![image](https://user-images.githubusercontent.com/11271493/73174954-5aacb300-4109-11ea-8acf-b566aa2bd0dc.png)
 
+3. When the account is created, navigate to the Data Explorer and create a new Database. Uncheck the "Provision throughput" option.
+![image](https://user-images.githubusercontent.com/11271493/73177338-10c6cb80-410f-11ea-80ab-62116643ca07.png)
+
+4. Have a look to the SQL Database schema to create containers (with defautl throughput : 400 RUs) according to the existing tables:
+  - Orders
+  - OrderDetails
+  - Category
+  - User
+  - Events
+  - Item
+  - ItemAggregate
+  - CartItem
+
+5. 
 
 
 # Migration
