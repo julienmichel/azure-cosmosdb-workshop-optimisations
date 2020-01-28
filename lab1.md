@@ -10,13 +10,15 @@ Attendees provision a new Cosmos DB account, using the SQL API, located in a res
 ![Cosmos DB database](https://user-images.githubusercontent.com/11271493/73177338-10c6cb80-410f-11ea-80ab-62116643ca07.png)
 
 4. Have a look to the SQL Database schema to create containers (with default throughput : 400 RUs) according to the existing tables:
-  - Orders
-  - OrderDetails
-  - Category
-  - User
-  - Events
-  - Item
-  - ItemAggregate
-  - CartItem
+    - Orders
+    - OrderDetails
+    - Category
+    - User
+    - Events
+    - Item
+    - ItemAggregate
+    - CartItem
+    
+  > **Tips**: The creation of the can be achieved 
 
 5. Now we need to upload data from the existing SQL Server database, go to Lab 2
