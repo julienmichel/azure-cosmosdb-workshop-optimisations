@@ -1,5 +1,6 @@
-# Migration
-The preferred migration tool to Cosmos DB is Azure Data Factory, given its ability to perform migrations at scale, along with transformations and orchestration using several actions, if needed. 
+# Migration of the data
+The preferred migration tool to Cosmos DB is Azure Data Factory (ADF), given its ability to perform migrations at scale, along with transformations and orchestration using several actions, if needed.  
+In this lab, we would like to guide you in the usage of ADF to migrate the data from the existing SQL database to your Cosmos DB account.
 
 1. From the Azure portal, got to Data Factories and create a new instance by clicking the "Add" button.
 2. Give it a name, select the resource group you created in the previous lab, a region and unchecked the "enable GIT" option.
@@ -13,6 +14,10 @@ The preferred migration tool to Cosmos DB is Azure Data Factory, given its abili
   - To define the destination, selection new connection in the Azure tab, then select Azure Cosmos DB (SQL API) and set the connection string
   - Start the configuration of the mapping between tables.
   - When everything is done, validate until the deployment page and execute the copy pipeline
-6. 
+6. ...
 
 Within the transformation steps, a good practice would be to add a new derived field that sets the entity type so different entities within the same container can be identified by type, for querying purposes. Attendees will perform optimizations in the next challenge, so don't expect full denormalization and ideal partition strategies at this point. The main goal is for attendees to perform a repeatable raw migration to their NoSQL database.
+
+
+## Resources
+•	Copy data to or from Azure Cosmos DB (SQL API) by using Azure Data Factory (https://docs.microsoft.com/azure/data-factory/connector-azure-cosmos-db)
