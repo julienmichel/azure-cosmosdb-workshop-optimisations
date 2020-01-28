@@ -19,6 +19,6 @@ Attendees provision a new Cosmos DB account, using the SQL API, located in a res
     - ItemAggregate
     - CartItem
     
-  > **Tips**: The creation of the can be achieved 
+  > **Tips**: The creation of containers can be achieved thanks to the Azure CLI tool accessible from the portal. An example of commande that can be used : az cosmosdb sql container create -a movies  -g your-resource-group-name  -d movieraw  -n Item  -p '/ItemId' --throughput 400  
 
 5. Now we need to upload data from the existing SQL Server database, go to Lab 2
