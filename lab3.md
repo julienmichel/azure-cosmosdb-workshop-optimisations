@@ -33,3 +33,10 @@ Perform sizing exercise to determine anticipated scale requirements. Optimize th
 >  o	The most appropriate consistency model is selected based on usage patterns within the web application, and through testing.  
 >• Take care to consider the differences in modeling data for different data stores.  
 >  o	Avoid treating collections like tables and understand how multiple entity types can possibly be stored within the same collection.  
+
+## Resources
+•	Choosing a Data Model (https://docs.microsoft.com/azure/architecture/data-guide/big-data/non-relational-data)
+•	Data Modeling for NoSQL (https://docs.microsoft.com/azure/cosmos-db/modeling-data)
+•	Partitioning in Azure Cosmos DB (https://docs.microsoft.com/azure/cosmos-db/partitioning-overview)
+•	Modeling and partitioning a real-world example on Azure Cosmos DB (https://docs.microsoft.com/azure/cosmos-db/how-to-model-partition-example)
+
