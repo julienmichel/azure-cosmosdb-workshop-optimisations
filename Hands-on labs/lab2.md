@@ -35,4 +35,4 @@ This step will be the creation of an ADF pipeline to copy data from SQL to Cosmo
 
 
 ## Resources
-  •	![Copy data to or from Azure Cosmos DB (SQL API) by using Azure Data Factory](https://docs.microsoft.com/azure/data-factory/connector-azure-cosmos-db)
+  •	[Copy data to or from Azure Cosmos DB (SQL API) by using Azure Data Factory](https://docs.microsoft.com/azure/data-factory/connector-azure-cosmos-db)
