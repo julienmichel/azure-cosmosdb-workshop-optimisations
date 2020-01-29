@@ -14,10 +14,10 @@ This step will be the creation of an ADF pipeline to copy data from SQL to Cosmo
 2. Give it a name, select the resource group you created in the previous lab, a region and unchecked the **"enable GIT"** option.  
   
 3. When the deployment if finished, open the new Data Factory instance and click on Author & Monitor  
-  ![ADF Access](/media/lab2-adf-access.png)  
+  ![ADF Access](media/lab2-adf-access.png)  
   
 4. In the ADF Editor homepage, click on the Copy Data activity
-  ![ADF Homepage](/media/lab2-adf-homepage.png)  
+  ![ADF Homepage](media/lab2-adf-homepage.png)  
   
 5. Define a name, then define the source with SQL Database, the destination with the newly created Cosmos DB account
   - To define the source, select new connection in the Azure tab, then select SQL Managed Instance and set the connection string
