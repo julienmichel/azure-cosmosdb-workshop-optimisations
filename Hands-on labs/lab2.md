@@ -28,7 +28,7 @@ This step will be the creation of an ADF pipeline to copy data from SQL to Cosmo
     
 6. ...  
   
-7. Next step is the optimisation of the data model. Go to ![lab3](lab3.md)
+7. Next step is the optimisation of the data model. Go to [lab3](lab3.md)
 
 >## Tips:
 >   Within the transformation steps, a good practice would be to add a new derived field that sets the entity type so different entities within the same container can be identified by type, for querying purposes. Attendees will perform optimizations in the next challenge, so don't expect full denormalization and ideal partition strategies at this point. The main goal is for attendees to perform a repeatable raw migration to their NoSQL database.
