@@ -1,20 +1,19 @@
 # Enter the first Resource Group name (i.e. cosmosdbworkshop)
 $resourceGroup1Name = "cosmosdbworkshop"
 # Enter the location for the first resource group (i.e. westus2)
-$location1 = "westus2"
+$location1 = "eastus"
 # Enter the SQL Server username (i.e. cosmosdbworkshop)
 $sqlAdministratorLogin = "cosmosdbworkshopadmin"
 # Enter the SQL Server password (i.e. Password123)
 $sqlAdministratorLoginPassword = "Password123"
 
 $suffix = -join ((48..57) + (97..122) | Get-Random -Count 13 | % {[char]$_})
-$suffix2 = -join ((48..57) + (97..122) | Get-Random -Count 13 | % {[char]$_})
 $databaseName = "Movies"
 $sqlserverName = "cosmosdbworkshop-$suffix"
 
 New-AzResourceGroup -Name $resourceGroup1Name -Location $location1
 
-$templateUri = "https://raw.githubusercontent.com/solliancenet/nosql-openhack/master/azuredeploy.json"
+$templateUri = "https://raw.githubusercontent.com/julienmichel/azure-cosmosdb-workshop-optimisations/master/azuredeploy.json"
 
 $outputs = New-AzResourceGroupDeployment `
     -ResourceGroupName $resourceGroup1Name `
@@ -22,8 +21,7 @@ $outputs = New-AzResourceGroupDeployment `
     -sqlserverName $sqlserverName `
     -sqlAdministratorLogin $sqlAdministratorLogin `
     -sqlAdministratorLoginPassword $(ConvertTo-SecureString -String $sqlAdministratorLoginPassword -AsPlainText -Force) `
-    -suffix $suffix `
-    -suffix2 $suffix2
+    -suffix $suffix
 
 $importRequest = New-AzSqlDatabaseImport -ResourceGroupName $resourceGroup1Name `
     -ServerName $sqlserverName -DatabaseName $databaseName `
