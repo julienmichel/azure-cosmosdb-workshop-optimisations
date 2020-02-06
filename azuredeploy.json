@@ -24,18 +24,10 @@
       "metadata": {
         "description": "Location for all resources in the first location."
       }
-    },
-    "suffix": {
-      "type": "string",
-      "metadata": {
-        "description": "Unique suffix to append to all resource names in the first resource group."
-      }
     }
   },
   "variables": {
-    "name-suffix": "[parameters('suffix')]",
-    "sqlserverName": "[parameters('sqlserverName')]",
-    "databaseName": "Movies"
+    "sqlserverName": "[parameters('sqlserverName')]"
   },
   "resources": [
     {
