@@ -27,16 +27,18 @@ Perform sizing exercise to determine anticipated scale requirements. Optimize th
 ## Tasks
 1. Open the Data Explorer  
 
-2. ...   
+2. Write the queries that will allow you to meet the previous requirements
+
+3. Test your queries and evaluate the cost of each querie (nb of RUs)
+
+4. Think about possible changes in your data model (embedding...) and to you indexing policies
 
 
 >### Tips  
->   - Compare the partition strategy developed in the previous challenge to what you think it should be now. Has your plan evolved? Are there any instances where having more than one partition to support different read-heavy workloads make sense?  
 >   - When optimizing your schema, consider the following:  
 >     - The optimal partition key has been applied at the collection level for each collection.  
 >     - Related documents/entities are collocated under the same partition. These should be entities that are most often retrieved together.  
 >     - If appropriate, some related data is embedded. For example, if you return a product and want to include some information about the category (which may be stored in a different partition) without retrieving the entire category document. In other words, denormalization.  
->     - As needed, virtual partition key values are used.  
 >     - Adjust indexing appropriate for read or write-optimized workloads.  
 >     - The most appropriate consistency model is selected based on usage patterns within the web application, and through testing.  
 >   - Take care to consider the differences in modeling data for different data stores.  
