@@ -29,3 +29,6 @@ These labs help attendees think beyond typical CRUD operations they may be used 
 - SQL Server
 - Azure Data Factory
 - Cosmos DB (including SQL API)
+
+## Related references
+[NoSQL OpenHack](https://github.com/solliancenet/nosql-openhack)
