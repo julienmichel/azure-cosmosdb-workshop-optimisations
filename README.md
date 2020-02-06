@@ -1,4 +1,4 @@
-# azure-cosmosdb-workshop-optimisations
+# Azure Cosmos DB workshop on optimisations
 You will see a typical customer path that begins with building a traditional monolithic web application that uses a relational data store, to re-platforming and re-architecting their solution to a modern, cloud-native, microservices-focused solution.  
 The labs will guide you in the migration path from a relational data store to a NoSQL data store that is highly scalable and ready for global distribution, serves as a solid foundation for application modernization efforts that would normally occur in parallel. 
 
