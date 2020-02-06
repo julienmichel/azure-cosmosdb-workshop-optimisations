@@ -1,8 +1,8 @@
 # Enter the first Resource Group name (i.e. cosmosdbworkshop)
 $resourceGroup1Name = "cosmosdbworkshop"
-# Enter the location for the first resource group (i.e. westus2)
+# Enter the location for the first resource group (i.e. eastus)
 $location1 = "eastus"
-# Enter the SQL Server username (i.e. cosmosdbworkshop)
+# Enter the SQL Server username (i.e. cosmosdbworkshopadmin)
 $sqlAdministratorLogin = "cosmosdbworkshopadmin"
 # Enter the SQL Server password (i.e. Password123)
 $sqlAdministratorLoginPassword = "Password123"
@@ -21,8 +21,7 @@ $outputs = New-AzResourceGroupDeployment `
     -sqlserverName $sqlserverName `
     -sqlAdministratorLogin $sqlAdministratorLogin `
     -sqlAdministratorLoginPassword $(ConvertTo-SecureString -String $sqlAdministratorLoginPassword -AsPlainText -Force) `
-    -suffix $suffix
-
+ 
 $importRequest = New-AzSqlDatabaseImport -ResourceGroupName $resourceGroup1Name `
     -ServerName $sqlserverName -DatabaseName $databaseName `
     -DatabaseMaxSizeBytes "5000000" `
