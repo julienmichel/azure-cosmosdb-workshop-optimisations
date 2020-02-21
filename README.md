@@ -16,7 +16,7 @@ These labs help attendees think beyond typical CRUD operations they may be used 
 ## Abstracts
 
 ### Workshop
-Follow the deployment instructions to prepare the classroom environment for the event.
+Follow the [deployment instructions](deployment-instructions.md) to prepare the classroom environment for the event.
 
 ### Whiteboard Design Session
 
