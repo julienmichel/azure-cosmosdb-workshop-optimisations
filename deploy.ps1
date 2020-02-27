@@ -20,8 +20,7 @@ $outputs = New-AzResourceGroupDeployment `
     -TemplateUri $templateUri `
     -sqlserverName $sqlserverName `
     -sqlAdministratorLogin $sqlAdministratorLogin `
-    -sqlAdministratorLoginPassword $(ConvertTo-SecureString -String $sqlAdministratorLoginPassword -AsPlainText -Force) `
-    -suffix "cosmosdb"
+    -sqlAdministratorLoginPassword $(ConvertTo-SecureString -String $sqlAdministratorLoginPassword -AsPlainText -Force)
  
 $importRequest = New-AzSqlDatabaseImport -ResourceGroupName $resourceGroup1Name `
     -ServerName $sqlserverName -DatabaseName $databaseName `
